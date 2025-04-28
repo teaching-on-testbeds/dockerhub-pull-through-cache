@@ -1,0 +1,4 @@
+{
+	"registry-mirrors": ["http://kvm-dyn-129-114-25-196.tacc.chameleoncloud.org:5000"], 
+	"insecure-registries": ["kvm-dyn-129-114-25-196.tacc.chameleoncloud.org:5000"]
+}

@@ -1,0 +1,11 @@
+name: cache
+services:
+  docker-cache:
+    image: registry:2
+    container_name: docker-cache
+    ports:
+      - "5000:5000"
+    volumes:
+      - /home/cc/registry-config:/etc/docker/registry
+      - /mnt/block:/var/lib/registry
+    restart: unless-stopped
