@@ -6,6 +6,10 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - /home/cc/registry-config:/etc/docker/registry
-      - /mnt/block:/var/lib/registry
+      - registry_data:/var/lib/registry
+      - /home/cc//dockerhub-pull-through-cache/registry-config:/etc/docker/registry
     restart: unless-stopped
+
+volumes:
+  registry_data:
+
