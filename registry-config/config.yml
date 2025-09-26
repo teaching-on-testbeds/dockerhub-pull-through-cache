@@ -10,3 +10,5 @@ http:
     htpasswd:
       realm: basic-realm
       path: /auth/htpasswd  # no such path, won't allow pushes
+tracing:
+  exporter: null
