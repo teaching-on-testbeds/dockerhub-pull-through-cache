@@ -1,13 +1,13 @@
 name: cache
 services:
   docker-cache:
-    image: registry:2
+    image: registry:3
     container_name: docker-cache
     ports:
       - "5000:5000"
     volumes:
       - registry_data:/var/lib/registry
-      - /home/cc//dockerhub-pull-through-cache/registry-config:/etc/docker/registry
+      - /home/cc/dockerhub-pull-through-cache/registry-config:/etc/docker/registry
     restart: unless-stopped
 
 volumes:
